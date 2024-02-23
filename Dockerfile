@@ -1,4 +1,4 @@
-FROM node:slim
+FROM node:lts-slim
 
 RUN export DEBIAN_FRONTEND="noninteractive" \
     && apt-get update \
@@ -11,3 +11,5 @@ RUN export DEBIAN_FRONTEND="noninteractive" \
 WORKDIR /work
 
 ENV TZ=Asia/Tokyo
+
+RUN zsh -c "`curl -L raw.github.com/44103/dotfiles/main/install.sh`"
