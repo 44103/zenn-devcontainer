@@ -1,0 +1,28 @@
+{
+  "name": "Zenn",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "zenn",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "zsh"
+      },
+      "extensions": [
+        "sleistner.vscode-fileutils",
+        "fabiospampinato.vscode-todo-plus",
+        "mhutchie.git-graph",
+        "esbenp.prettier-vscode",
+        "christian-kohler.path-intellisense",
+        "streetsidesoftware.code-spell-checker",
+        "zenn.zenn-preview"
+      ],
+      "recommendations": [
+        "hediet.vscode-drawio"
+      ]
+    }
+  },
+  "initializeCommand": "touch .devcontainer/.zsh_history"
+}
