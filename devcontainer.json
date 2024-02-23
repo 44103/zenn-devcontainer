@@ -8,7 +8,14 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "terminal.integrated.shell.linux": "zsh"
+        "terminal.integrated.shell.linux": "zsh",
+        "cSpell.words": [
+          "Zenn",
+          "devcontainer"
+        ],
+        "cSpell.ignorePaths": [
+          ".devcontainer"
+        ]
       },
       "extensions": [
         "sleistner.vscode-fileutils",
@@ -24,5 +31,7 @@
       ]
     }
   },
-  "initializeCommand": "touch .devcontainer/.zsh_history"
+  "initializeCommand": "touch .devcontainer/.zsh_history",
+  "onCreateCommand": "yarn",
+  "postCreateCommand": "yarn add -D zenn-cli && yarn zenn init"
 }

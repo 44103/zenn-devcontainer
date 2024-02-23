@@ -10,8 +10,4 @@ RUN export DEBIAN_FRONTEND="noninteractive" \
 
 WORKDIR /work
 
-RUN yarn \
-    && yarn add -D zenn-cli \
-    && yarn zenn init
-
 ENV TZ=Asia/Tokyo
